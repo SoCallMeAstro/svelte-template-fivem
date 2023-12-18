@@ -1,0 +1,20 @@
+{
+	"extends": "@tsconfig/svelte/tsconfig.json",
+	"compilerOptions": {
+		"target": "esnext",
+		"useDefineForClassFields": true,
+		"module": "esnext",
+		"baseUrl": ".",
+		"ignoreDeprecations": "5.0",
+		"resolveJsonModule": true,
+		"paths": {
+			"@Components/*": ["source/Components/*"],
+			"@Store/*": ["source/Stores/*"],
+			"@Utils/*": ["source/Utils/*"],
+			"@Handlers/*": ["source/Handlers/*"]
+		},
+		"allowJs": true,
+		"checkJs": true
+	},
+	"include": ["source/**/*.d.ts", "source/**/*.ts", "source/**/*.js", "source/**/*.svelte"]
+}
